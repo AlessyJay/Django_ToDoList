@@ -1,0 +1,38 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="{% static 'src/styles.css' %}" rel="stylesheet" />
+    <title>Home page</title>
+  </head>
+  <body>
+    <nav
+      class="sticky top-0 flex w-full items-center justify-around border-b border-gray-300 bg-white p-5"
+    >
+      <h1 class="text-4xl">To Do List</h1>
+
+      <div class="flex items-center gap-3">
+        <p>Home</p>
+        <p>About</p>
+        <p>Your Profile</p>
+      </div>
+    </nav>
+
+    <div class="flex items-center justify-center">
+      <div class="container rounded-md">
+        <table class="my-10 w-full border text-center">
+          <tr>
+            <th>ID</th>
+            <th>To Do</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Saving money today</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
+</html>
